@@ -1,10 +1,10 @@
 import BlobBackground from "./components/blob"
 import Button from "./components/button"
 
+//Ramo develop
 export function App() {
   return (
     <>
-    {/* <div className="bg-cover bg-no-repeat h-screen bg-[url(/img/fundo.jpg)]"> */}
     <div className="relative min-h-screen">
       <BlobBackground />
       <div className="container mx-auto p-8 relative z-10">
