@@ -2,7 +2,7 @@ import BlobBackground from "./components/blob"
 import Button from "./components/button"
 
 //Ramo Feature: pageOld
-export function App() {
+function App() {
   return (
     <>
     <div className="relative min-h-screen">
