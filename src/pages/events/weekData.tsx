@@ -172,28 +172,4 @@ export const weekSchedule = [
         },
       ],
     },
-    // {
-    //   day: "Sábado",
-    //   date: "9 de Novembro",
-    //   speakers: [
-    //     {
-    //       name: "Daniel Costa",
-    //       photo: "/speakers/daniel-costa.jpg", // Substitua pelo caminho real
-    //       topic: "Futuro do Trabalho",
-    //       time: "10:00 - 11:30",
-    //     },
-    //     {
-    //       name: "Luciana Martins",
-    //       photo: "/speakers/luciana-martins.jpg", // Substitua pelo caminho real
-    //       topic: "Sustentabilidade Empresarial",
-    //       time: "14:00 - 15:30",
-    //     },
-    //     {
-    //       name: "Gabriel Almeida",
-    //       photo: "/speakers/gabriel-almeida.jpg", // Substitua pelo caminho real
-    //       topic: "Transformação Digital",
-    //       time: "16:00 - 17:30",
-    //     },
-    //   ],
-    // },
   ];

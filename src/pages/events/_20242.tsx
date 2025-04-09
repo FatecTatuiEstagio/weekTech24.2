@@ -8,6 +8,7 @@ import logoTech from '../../imgs/eventos/20242/logo-20242.png';
 import logoCps from '../../imgs/eventos/20242/logoCps.png';
 import logoFatec from '../../imgs/eventos/20242/logoFatec.png';
 import EventScheduleAccordion from "./palestras";
+import { Faq } from "./Faq";
 
 export function _20242() {
     return (
@@ -44,6 +45,9 @@ export function _20242() {
                 <p className="text-4xl font-cardo italic">Palestrantes</p>
             </div>
             <EventScheduleAccordion />
+            <Slice/>
+            <Faq />
+            <Slice/>
         </>
     )
 }
