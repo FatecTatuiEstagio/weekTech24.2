@@ -20,8 +20,8 @@ export function _20242() {
                 </Link>
             </div>
             <div className="flex md:gap-60 gap-2.5 justify-center">
-                <img src={logoTech} className="max-sm:w-12 md:w-[126px] float-right" alt="logo da semana de tecnologia" />
-                <img src={logoFatec} className="max-sm:w-12 md:w-[126px] float-right" alt="logo da fatec tatuí" />
+                <img src={logoTech} className="max-sm:w-16 md:w-[126px] float-right" alt="logo da semana de tecnologia" />
+                <img src={logoFatec} className="max-sm:w-16 md:w-[126px] float-right" alt="logo da fatec tatuí" />
                 <img src={logoCps} className="max-sm:w-[205px] md:w-[430px] float-right" alt="logo do CPS" />
             </div>
             <ImageCarousel />
