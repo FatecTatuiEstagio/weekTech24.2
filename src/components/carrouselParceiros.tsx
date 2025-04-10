@@ -19,7 +19,7 @@ const partners = [
 
 export default function PartnersCarousel() {
   // Configuração para autoplay
-  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+  const [_emblaRef, _emblaApi] = useEmblaCarousel({ 
     loop: true,
     align: "start",
     slidesToScroll: 1,
