@@ -40,14 +40,6 @@ export function Events() {
          </div>
          <p className="text-2xl flex justify-center">Envetos da Semana de Tecnologia</p>
          <div className="flexv justify-center h-screen">
-            {/* <div className="mt-10 w-full bg-zinc-500/60 h-16 mx-5 rounded-2xl flex items-center indent-3">
-               <img src={logo20242} className="w-15" alt="logo de 2024-2" />
-               <a className="text-lg">
-                  <Link to={"/events/20242"}>
-                     Semana de Tecnologia 2024-2
-                  </Link>
-               </a>
-            </div> */}
             {events.map((obj, index) => (
                <ListEvents key={index} link={obj.link} logoEvent={obj.logoEvent} name={obj.name} />
             ))}
