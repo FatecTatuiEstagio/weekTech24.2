@@ -15,16 +15,11 @@ const events = [
       link: "/events/20242",
       logoEvent: logo20242
    },
-   {
-      name: "Semana de Tecnologia 2024-2",
-      link: "/events/20242",
-      logoEvent: logo20242
-   },
 ]
 
 function ListEvents({ name, link, logoEvent }: TipEvent) {
    return (
-      <div className="mt-10 w-screen bg-zinc-500/60 h-16 px-10 rounded-2xl flex items-center indent-3">
+      <div className="mt-10 bg-zinc-500/60 h-16 px-5 mx-5 rounded-2xl flex items-center indent-3">
          <img src={logoEvent} className="w-15" alt="logo de 2024-2" />
          <a className="text-lg">
             <Link to={link}>
@@ -45,14 +40,14 @@ export function Events() {
          </div>
          <p className="text-2xl flex justify-center">Envetos da Semana de Tecnologia</p>
          <div className="flexv justify-center h-screen">
-            <div className="mt-10 w-screen bg-zinc-500/60 h-16 mx-5 rounded-2xl flex items-center indent-3">
+            {/* <div className="mt-10 w-full bg-zinc-500/60 h-16 mx-5 rounded-2xl flex items-center indent-3">
                <img src={logo20242} className="w-15" alt="logo de 2024-2" />
                <a className="text-lg">
                   <Link to={"/events/20242"}>
                      Semana de Tecnologia 2024-2
                   </Link>
                </a>
-            </div>
+            </div> */}
             {events.map((obj, index) => (
                <ListEvents key={index} link={obj.link} logoEvent={obj.logoEvent} name={obj.name} />
             ))}
