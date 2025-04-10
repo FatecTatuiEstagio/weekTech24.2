@@ -19,15 +19,15 @@ export function _20242() {
                     <MoveLeft size={30} color="black" />
                 </Link>
             </div>
-            <div className="flex md:gap-60 gap-2.5 justify-center">
-                <img src={logoTech} className="max-sm:w-16 md:w-[126px] float-right" alt="logo da semana de tecnologia" />
-                <img src={logoFatec} className="max-sm:w-16 md:w-[126px] float-right" alt="logo da fatec tatuí" />
-                <img src={logoCps} className="max-sm:w-[205px] md:w-[430px] float-right" alt="logo do CPS" />
+            <div className="flex md:gap-20 sm:gap-5 gap-2.5 justify-center">
+                <img src={logoTech} className="max-sm:w-16 sm:w-[100px] md:w-[126px] float-right" alt="logo da semana de tecnologia" />
+                <img src={logoFatec} className="max-sm:w-16 sm:w-[100px] md:w-[126px] float-right" alt="logo da fatec tatuí" />
+                <img src={logoCps} className="max-sm:w-[205px] sm:w-[300px] md:w-[430px] float-right" alt="logo do CPS" />
             </div>
             <ImageCarousel />
             <div className="flex items-center flex-col gap-5">
-                <p className="text-2xl">O que é a Semana da Tecnologia?</p>
-                <p className="mx-8">A Semana da Tecnologia da Fatec Tatuí é um evento que ocorre anualmente, oferecendo uma variedade de atividades 
+                <p className="sm:text-4xl text-2xl">O que é a Semana da Tecnologia?</p>
+                <p className="sm:mx-40 xl:mx-96 mx-8">A Semana da Tecnologia da Fatec Tatuí é um evento que ocorre anualmente, oferecendo uma variedade de atividades 
                     como palestras, exposições de pesquisas acadêmicas, minicursos, e workshops. O objetivo principal é promover o 
                     conhecimento científico e tecnológico, além de criar oportunidades de networking entre alunos, empresas e a comunidade 
                     acadêmica. Este ano,
@@ -37,12 +37,12 @@ export function _20242() {
             
             <Slice/>
             <div className="flex justify-center flex-col items-center">
-                <p className="text-4xl font-cardo italic">Parceiros</p>
+                <p className="min-sm:text-4xl min-md:text-5xl text-3xl font-cardo italic">Parceiros</p>
                 <PartnersCarousel />
             </div>
             <Slice/>
             <div className="flex justify-center flex-col items-center">
-                <p className="text-4xl font-cardo italic">Palestrantes</p>
+                <p className="min-sm:text-4xl min-md:text-5xl text-3xl font-cardo italic">Palestrantes</p>
             </div>
             <EventScheduleAccordion />
             <Slice/>

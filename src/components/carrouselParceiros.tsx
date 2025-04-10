@@ -46,10 +46,9 @@ export default function PartnersCarousel() {
             {partners.map((partner, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                 <div className="p-2 h-24 flex items-center justify-center bg-white rounded-md shadow-sm border border-gray-100">
-                  {/* {console.log(partner.logo)} */}
                   <img
                     src={partner}
-                    className="max-h-16 max-w-[80%] object-contain"
+                    className="max-h-16 min-lg:max-h-60 max-w-[80%] object-contain"
                   />
                 </div>
               </CarouselItem>

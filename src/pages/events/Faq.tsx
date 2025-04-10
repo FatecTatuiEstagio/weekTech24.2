@@ -7,8 +7,8 @@ interface ModelHeading{
 function TitleText({text, title}: ModelHeading) {
     return(
         <>
-            <h1 className="max-sm:text-2xl font-inter">{title}</h1>
-            <p className="text-start">{text}</p>
+            <h1 className="min-sm:text-3xl min-md:text-4xl text-2xl font-inter">{title}</h1>
+            <p className="text-start min-sm:text-sm min-md:text-lg">{text}</p>
         </>
     )
 }
@@ -35,11 +35,11 @@ const arrayText = [
         text: "O evento será realizado na Fatec Tatuí, localizada na Rodovia Mario Batista Mori, 971 - Jardim Aeroporto, Tatuí - SP"
     },
 ]
-
+//
 export function Faq() {
     return (
-        <>
-            <div className="flex flex-col px-8 gap-5 items-center text-center justify-center mb-28">
+        <> 
+            <div className="flex flex-col max-sm:mx-8 min-sm:mx-20 min-md:mx-28 min-lg:mx-44 min-[1200mx]:mx-56 min-xl:mx-64 gap-5 items-center text-center justify-center mb-28">
                 {arrayText.map((obj, index) => (
                     <TitleText key={index} title={obj.title} text={obj.text} />
                 ))}
