@@ -19,10 +19,10 @@ export function _20242() {
                     <MoveLeft size={30} color="black" />
                 </Link>
             </div>
-            <div className="grid grid-cols-2 ml-5">
-                <img src={logoTech} className="min-[375px]:w-24 float-right" alt="logo da semana de tecnologia" />
-                <img src={logoFatec} className="min-[375px]:w-24 float-right" alt="logo da fatec tatuí" />
-                <img src={logoCps} className="min-[375px]:w-[500px] float-right" alt="logo do CPS" />
+            <div className="flex md:gap-60 gap-2.5 justify-center">
+                <img src={logoTech} className="max-sm:w-12 md:w-[126px] float-right" alt="logo da semana de tecnologia" />
+                <img src={logoFatec} className="max-sm:w-12 md:w-[126px] float-right" alt="logo da fatec tatuí" />
+                <img src={logoCps} className="max-sm:w-[205px] md:w-[430px] float-right" alt="logo do CPS" />
             </div>
             <ImageCarousel />
             <div className="flex items-center flex-col gap-5">
