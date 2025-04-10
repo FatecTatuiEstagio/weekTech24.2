@@ -4,11 +4,10 @@ import {
   CarouselItem, 
   CarouselNext, 
   CarouselPrevious 
-} from "@/components/ui/carousel"; // Ajuste o caminho conforme sua estrutura
+} from "@/components/ui/carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
-// Logos dos parceiros (substitua pelos caminhos reais das suas imagens)
 import Igr from "../imgs/eventos/20242/parceiros/igr_logo.png"
 import One7 from "../imgs/eventos/20242/parceiros/one_7.png"
 import Uotz from "../imgs/eventos/20242/parceiros/uotz.png"
@@ -30,9 +29,7 @@ export default function PartnersCarousel() {
 
   return (
     <div className="w-full py-8 bg-gray-50">
-      <div className="container mx-auto px-4">
-        {/* Separador estilizado */}
-                
+      <div className="container mx-auto px-4">                
         <Carousel
           opts={{
             align: "start",
