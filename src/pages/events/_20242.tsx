@@ -13,12 +13,6 @@ import { Faq } from "./Faq";
 export function _20242() {
     return (
         <>
-            <div></div>
-            <div className="flex justify-start min-[375px]:mt-10 min-[375px]:ml-5">
-                <Link to={"/events"}>
-                    <MoveLeft size={30} color="black" />
-                </Link>
-            </div>
             <div className="flex md:gap-20 sm:gap-5 gap-2.5 justify-center">
                 <img src={logoTech} className="max-sm:w-16 sm:w-[100px] md:w-[126px] float-right" alt="logo da semana de tecnologia" />
                 <img src={logoFatec} className="max-sm:w-16 sm:w-[100px] md:w-[126px] float-right" alt="logo da fatec tatuí" />
