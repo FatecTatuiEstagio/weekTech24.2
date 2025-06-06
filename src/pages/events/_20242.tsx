@@ -1,5 +1,3 @@
-import { MoveLeft } from "lucide-react";
-import { Link } from "react-router";
 
 import ImageCarousel from "@/components/carrousel";
 import PartnersCarousel from "@/components/carrouselParceiros";
@@ -7,8 +5,8 @@ import { Slice } from "@/components/slice";
 import logoTech from '../../imgs/eventos/20242/logo-20242.png';
 import logoCps from '../../imgs/eventos/20242/logoCps.png';
 import logoFatec from '../../imgs/eventos/20242/logoFatec.png';
-import EventScheduleAccordion from "./palestras";
 import { Faq } from "./Faq";
+import EventScheduleAccordion from "./palestras";
 
 export function _20242() {
     return (
