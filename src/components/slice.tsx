@@ -1,7 +1,7 @@
-export function Slice(){
-    return(
-        <>
-            <div className="max-sm:w-[80%] mt-10 mb-10 flex justify-center items-center h-px bg-gray-800 mx-8"></div>
-        </>
+export function Slice() {
+    return (
+      <div className="w-full flex justify-center py-10">
+        <div className="w-2/3 md:w-1/2 h-px bg-gradient-to-r from-transparent via-[#b20000] to-transparent opacity-40" />
+      </div>
     )
-}
+  }

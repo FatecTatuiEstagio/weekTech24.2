@@ -3,33 +3,58 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"; 
-import { weekSchedule } from "./weekData";
-import { cn } from "@/lib/utils";
-import { RodaConversa } from "./rodaConversa";
+} from "@/components/ui/accordion"
+import { weekSchedule } from "./weekData.tsx"
+import { cn } from "@/lib/utils"
+import { RodaConversa } from "./rodaConversa"
+
+
 
 export default function WeeklyScheduleAccordion() {
   return (
-    <div className="w-full max-w-4xl mx-auto py-8 px-4">
-      <Accordion type="single" collapsible className="w-full">
+    <div className="w-full max-w-5xl mx-auto py-10 px-4">
+
+      <Accordion type="single" collapsible className="w-full space-y-4">
+
         {weekSchedule.map((daySchedule, index) => (
-          <AccordionItem key={index} value={`day-${index}`}>
-            <AccordionTrigger className="flex justify-between py-4 px-6 bg-gray-50 hover:bg-gray-100 rounded-lg mb-2">
+          <AccordionItem
+            key={index}
+            value={`day-${index}`}
+            className="border border-gray-200 rounded-xl overflow-hidden"
+          >
+
+            {/* HEADER DO DIA */}
+            <AccordionTrigger className="flex justify-between px-6 py-5 bg-white hover:bg-gray-50">
+
               <div className="flex flex-col items-start">
-                <span className="text-xl font-semibold">{daySchedule.day}</span>
-                <span className="text-sm text-gray-500">{daySchedule.date}</span>
+                <span className="text-lg md:text-xl font-bold text-[#b20000]">
+                  {daySchedule.day}
+                </span>
+                <span className="text-sm text-gray-500">
+                  {daySchedule.date}
+                </span>
               </div>
+
             </AccordionTrigger>
-            <AccordionContent className="pt-4 pb-2 px-1">
-              <div className="space-y-6">
+
+            {/* CONTEÚDO */}
+            <AccordionContent className="px-4 pb-6 pt-4 bg-white">
+
+              <div className="space-y-5">
+
                 {daySchedule.speakers.map((speaker, speakerIndex) => (
-                  <div 
-                    key={speakerIndex} 
-                    className={cn("flex items-start gap-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm", !speaker.photo
-                      && "flex items-start flex-wrap gap-4 p-4 bg-white rounded-lg border border-gray-100 shadow-sm")}
+
+                  <div
+                    key={speakerIndex}
+                    className={cn(
+                      "flex gap-5 p-5 rounded-xl border border-gray-100 bg-white shadow-sm",
+                      !speaker.photo && "flex-col items-center text-center"
+                    )}
                   >
+
+                    {/* FOTO OU RODA DE CONVERSA */}
                     {speaker.photo ? (
-                        <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0">
+                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#b20000]/20">
                         <img
                           src={speaker.photo || ""}
                           alt={speaker.name}
@@ -37,22 +62,46 @@ export default function WeeklyScheduleAccordion() {
                         />
                       </div>
                     ) : (
-                      <RodaConversa />
+                      <div className="w-full">
+                        <RodaConversa />
+                      </div>
                     )}
-                    <div className="flex-grow text-center md:text-left">
-                      <h3 className="text-lg font-semibold">{speaker.name}</h3>
-                      <p className="text-gray-700 font-bold">{speaker.topic}</p>
-                      <p className="text-gray-700 py-3 font-medium">{speaker.describe}</p>
-                      <p className="text-gray-700 font-medium">Local: {speaker.local}</p>
-                      <p className="text-gray-500 text-sm mt-1">{speaker.time}</p>
+
+                    {/* INFO */}
+                    <div className="flex flex-col flex-1">
+
+                      <h3 className="text-lg font-semibold text-black">
+                        {speaker.name}
+                      </h3>
+
+                      <p className="text-[#b20000] font-semibold mt-1">
+                        {speaker.topic}
+                      </p>
+
+                      <p className="text-gray-600 text-sm md:text-base mt-2">
+                        {speaker.describe}
+                      </p>
+
+                      <div className="flex flex-col md:flex-row md:justify-between mt-3 text-sm text-gray-500 gap-1">
+                        <span>{speaker.local}</span>
+                        <span>{speaker.time}</span>
+                      </div>
+
                     </div>
+
                   </div>
+
                 ))}
+
               </div>
+
             </AccordionContent>
+
           </AccordionItem>
         ))}
+
       </Accordion>
+
     </div>
-  );
+  )
 }
