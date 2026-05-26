@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { weekSchedule } from "./weekData.tsx"
+import { weekSchedule } from "./weekData"
 import { cn } from "@/lib/utils"
 import { RodaConversa } from "./rodaConversa"
 
